@@ -84,7 +84,7 @@ Install the XRViewer:
 
 ```shell
 # clone XRViewer
-git clone https://gitlab.bj.sensetime.com/openxrlab/xrviewer.git
+git clone https://github.com/openxrlab/xrviewer.git
 
 # make sure that your working directory is XRViewer root
 cd xrviewer/

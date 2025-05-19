@@ -20,7 +20,7 @@ XRViewer is a toolbox for visualizing data structures and algorithms in OpenXRLa
 - ***Camera Visualization***:
     - [x] cameras obtained from the [XRPrimer](https://github.com/openxrlab/xrprimer)
 
-    https://gitlab.bj.sensetime.com/openxrlab/xrviewer/uploads/a2ed2ea89b65c2c6bfa8684b1b9cbf5e/camera.mp4
+    https://github.com/user-attachments/assets/ab6b5f77-3893-4d86-88cf-6d0809904862
 
     - [ ] camera trajectory in [XRSLAM](https://github.com/openxrlab/xrslam)
 
@@ -28,15 +28,15 @@ XRViewer is a toolbox for visualizing data structures and algorithms in OpenXRLa
     - [x] static mesh in .obj/.gltf(glb)/.stl format
     - [x] SMPL(X) animation in .npz format exported by the [XRMoCap](https://github.com/openxrlab/xrmocap) with unlimited sequence length
 
-    https://gitlab.bj.sensetime.com/openxrlab/xrviewer/uploads/14afff105c91b142e1f9da9ca90d4194/smpl.mp4
+    https://github.com/user-attachments/assets/9403f019-b733-4606-a5ab-d73167341071
 
-    - [x] geometry cache in [.abc](https://github.com/alembic/alembic) format, e.g., clothing deformations produced by [XRTailor](https://gitlab.bj.sensetime.com/openxrlab/xrtailor)
+    - [x] geometry cache in [.abc](https://github.com/alembic/alembic) format, e.g., clothing deformations produced by [XRTailor](https://github.com/openxrlab/xrtailor)
 
-    https://gitlab.bj.sensetime.com/openxrlab/xrviewer/uploads/303e376726a01199c0b9c190dfe982e3/abc.mp4
+    https://github.com/user-attachments/assets/45db3c56-5c14-4347-9a3f-ab28a9d6ca26
 
     - [x] skeletal mesh animation in .gltf(glb)/.fbx format
 
-    https://gitlab.bj.sensetime.com/openxrlab/xrviewer/uploads/577c44906320a6491c5c01dac52d12be/glb.mp4
+    https://github.com/user-attachments/assets/a7df1db6-7de6-44d1-9048-8f174de982f9
 
 ## Supported Platforms
 
@@ -47,7 +47,7 @@ XRViewer has been tested for successfully running on the following operation sys
 
 ## Quick Start
 
-Please refer to our [documentation page](https://xrviewer.doc.diamond.zoe.sensetime.com/) for more details.
+Please refer to our [documentation page](https://xrviewer.readthedocs.io) for more details.
 
 ## License
 

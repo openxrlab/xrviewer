@@ -99,7 +99,7 @@ setup(
     author='',
     author_email='',
     keywords='',
-    url='https://gitlab.bj.sensetime.com/openxrlab/xrviewer',
+    url='https://github.com/openxrlab/xrviewer',
     packages=find_packages(where='.', exclude=('configs', 'tools', 'demo')),
     include_package_data=True,
     classifiers=[

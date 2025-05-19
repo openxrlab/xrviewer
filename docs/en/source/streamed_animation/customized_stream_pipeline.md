@@ -4,7 +4,7 @@ Install XRViewer:
 ```shell
 # Create conda virtual env and install XRViewer
 conda create -n CustomizedStream python=3.10
-git clone https://gitlab.bj.sensetime.com/openxrlab/xrviewer.git
+git clone https://github.com/openxrlab/xrviewer.git
 cd xrviewer/
 pip install .
 ```

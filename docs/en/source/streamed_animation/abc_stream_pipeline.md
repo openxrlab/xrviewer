@@ -41,7 +41,7 @@ CONDA_ENVS_DIR="PATH/TO/CONDA/ENVS"                 # conda virtual environments
 
 # Create conda virtual env and install XRViewer
 conda create -n AbcStream python=3.10
-git clone https://gitlab.bj.sensetime.com/openxrlab/xrviewer.git
+git clone https://github.com/openxrlab/xrviewer.git
 cd xrviewer/
 pip install .
 

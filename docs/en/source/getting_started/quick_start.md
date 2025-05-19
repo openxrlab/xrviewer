@@ -15,7 +15,7 @@ For the production build, the web viewer is compiled into a static web page. You
 
 ### Run with Python HTTP Server
 
-Download and unzip the pre-built package from the [release page](https://gitlab.bj.sensetime.com/openxrlab/xrviewer/-/releases). Then, deploy the server using:
+Download and unzip the pre-built package from the [release page](https://github.com/openxrlab/xrviewer/releases). Then, deploy the server using:
 
 ```shell
 # setup variables

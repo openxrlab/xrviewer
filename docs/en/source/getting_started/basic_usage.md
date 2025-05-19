@@ -3,7 +3,7 @@
 - [Camera](md-camera)
 - [Mesh](md-mesh)
 
-In this tutorial, we introduce the basic usage of the XRViewer. For convenience, we provide some example data for testing, which can be downloaded from [here](https://gitlab.bj.sensetime.com/openxrlab/xrviewer/uploads/79f90caea5e0a5d7ceb5d989ae4cb905/examples.zip).
+In this tutorial, we introduce the basic usage of the XRViewer. For convenience, we provide some example data for testing, which can be downloaded from [here](https://drive.google.com/file/d/1b_eY9-hG_2t8nDCk7LiNv_xOToAPjFd2/view?usp=sharing).
 
 (md-camera)=
 
