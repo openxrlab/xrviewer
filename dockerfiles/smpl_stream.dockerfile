@@ -20,10 +20,6 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apt-get autoclean
 
-# Set proxy
-ENV HTTPS_PROXY http://proxy.sensetime.com:3128
-ENV HTTP_PROXY http://proxy.sensetime.com:3128
-
 # Install miniconda
 RUN wget -q \
     https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
@@ -43,7 +39,3 @@ RUN . /opt/miniconda/etc/profile.d/conda.sh && \
     pip install -r /opt/service_requirements.txt && \
     pip install git+https://github.com/openxrlab/xrmocap.git && \
     pip cache purge
-
-# Unset proxy
-ENV HTTPS_PROXY=
-ENV HTTP_PROXY=

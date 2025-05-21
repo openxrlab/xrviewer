@@ -43,10 +43,6 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apt-get autoclean
 
-# Set proxy
-ENV HTTPS_PROXY http://proxy.sensetime.com:3128
-ENV HTTP_PROXY http://proxy.sensetime.com:3128
-
 # Install miniconda
 RUN wget -q \
     https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
@@ -126,8 +122,3 @@ RUN . /opt/miniconda/etc/profile.d/conda.sh && \
 # Copy dependencies
 RUN cp /opt/install/alembic/lib/python3.10/site-packages/alembic.so /opt/miniconda/envs/xrviewer/lib/python3.10/site-packages/ && \
     cp /opt/install/imath/lib/python3.10/site-packages/imath.so /opt/miniconda/envs/xrviewer/lib/python3.10/site-packages/
-
-# Unset proxy
-ENV HTTPS_PROXY=
-ENV HTTP_PROXY=
-
