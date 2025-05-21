@@ -3,6 +3,8 @@ FROM ubuntu:18.04
 
 ARG BOOST_VERSION="1.81.0"
 ARG CMAKE_VERSION="3.26.0"
+ARG ALEMBIC_VERSION="1.8.5"
+ARG IMATH_VERSION="v3.1.7"
 
 ARG CMAKE_NUM_JOBS=8
 
@@ -93,6 +95,7 @@ RUN . /opt/miniconda/etc/profile.d/conda.sh && \
     cd /opt/ && \
     git clone https://github.com/AcademySoftwareFoundation/Imath.git && \
     cd Imath && \
+    git checkout ${IMATH_VERSION} && \
     cmake -S . -B build \
         -DCMAKE_INSTALL_PREFIX="/opt/install/imath" \
         -DPYTHON=ON \
@@ -108,6 +111,7 @@ RUN . /opt/miniconda/etc/profile.d/conda.sh && \
     cd /tmp/ && \
     git clone https://github.com/alembic/alembic.git && \
     cd alembic && \
+    git checkout ${ALEMBIC_VERSION} && \
     cmake -S . -B build \
         -DCMAKE_INSTALL_PREFIX="/opt/install/alembic" \
         -DImath_DIR="/opt/install/imath/lib/cmake/Imath" \
@@ -126,3 +130,4 @@ RUN cp /opt/install/alembic/lib/python3.10/site-packages/alembic.so /opt/minicon
 # Unset proxy
 ENV HTTPS_PROXY=
 ENV HTTP_PROXY=
+
