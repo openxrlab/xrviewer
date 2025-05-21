@@ -58,7 +58,7 @@ websocket_port=18835                  # port to be exposed to the viewer
 zmq_port=18836                        # port that websocket server and pipeline used to communicate
 websocket_server_ip='127.0.0.1'       # ip address to be exposed to the viewer
 smpl_stream_server_ip='127.0.0.1'     # ip address of the smpl stream service on XRMoCap
-smpl_stream_server_port=18800         # the smpl stream service exposed port
+smpl_stream_server_port=29091         # the smpl stream service exposed port
 ```
 
 Run the pipeline with the config:
@@ -71,12 +71,11 @@ sudo sh scripts/run_smpl_stream_pipeline_docker.sh configs/smpl_stream_pipeline.
 
 ## From-scratch Setup
 
-The SMPL stream service is integrated into XRMoCap. The installation guideline of XRMoCap can be found [here](https://github.com/openxrlab/xrmocap/blob/main/docs/en/installation.md). The SMPL stream service can be started using:
+The SMPL stream service is integrated into XRMoCap. The installation guideline of XRMoCap can be found [here](https://github.com/openxrlab/xrmocap/blob/main/docs/en/installation.md). Notice that you need to download body models to `xrmocap/xrmocap_data/body_models` as described in [Body Model Preparation](https://xrmocap.readthedocs.io/en/latest/getting_started.html#body-model-preparation-optional). The SMPL stream service can be started using:
 
 ```shell
 python tools/start_service.py --config_path configs/modules/service/smpl_stream_service.py
 ```
-
 
 `configs/modules/service/smpl_stream_service.py` can be configured as described in [Setup SMPL Stream Service](md-setup-smpl-stream-service).
 
