@@ -28,13 +28,7 @@ class SMPLStreamPipeline(Pipeline):
             logger=self.logger)
 
     def update_stream_data(self, stream_data: bytes) -> int:
-        res = self.smpl_client.upload_smpl_data(stream_data)
-        n_frames = int(res['n_frames'])
-
-        if 0 == n_frames:
-            self.zmq_handler.write(PipelineActionsEnum.UPDATE_ALERT_MESSAGE,
-                                   str(res['msg']))
-        return n_frames
+        return self.smpl_client.upload_smpl_data(stream_data)
 
     def get_faces(self) -> List[int]:
         faces = self.smpl_client.get_faces()
