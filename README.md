@@ -9,6 +9,7 @@
 <div align="center">
 
 [![Documentation](https://readthedocs.org/projects/xrviewer/badge/?version=latest)](https://xrviewer.readthedocs.io/en/latest/?badge=latest)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/openxrlab/xrviewer)
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/openxrlab/xrviewer.svg)](https://github.com/openxrlab/xrviewer/issues)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
